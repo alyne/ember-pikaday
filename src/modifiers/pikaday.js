@@ -60,7 +60,7 @@ export default class PikadayModifier extends Modifier {
       valueAltered = true;
     }
 
-    if (value) {
+    if (value !== undefined) {
       this.#pikaday.setDate(value, !valueAltered);
     }
 
